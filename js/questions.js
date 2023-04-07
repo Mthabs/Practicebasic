@@ -58,57 +58,57 @@ let questions = [
   
     {
     numb: 6,
-    question: "Which country won the first ever World Cup in 1930?",
-    answer: "Uruguay",
+    question: "Which club has won the most Champions League titles?",
+    answer: "Real Madrid",
     options: [
-      "England",
-      "USA",
-      "Uruguay",
-      "Argentina"
+      "FC Barcelona",
+      "Real Madrid",
+      "Chelsea",
+      "Liverpool"
     ]
   },
     {
     numb: 7,
-    question: "Which country has won the most World Cups?",
-    answer: "Brazil",
+    question: "Who is the Champions League's top goalscorer of all time?",
+    answer: "Cristiano Ronaldo",
     options: [
-      "France",
-      "Brazil",
-      "Argentina",
-      "Germany"
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+      "Diego Maradona",
+      "Pelé"
     ]
   },
     {
     numb: 8,
-    question: "Which country has appeared in three World Cup finals, but never won the competition?",
-    answer: "Netherlands",
+    question: "Which outfield player appeared in the Champions League final in three different decades?",
+    answer: "Ryan Giggs",
     options: [
-      "Greece",
-      "Italy",
-      "Ukraine",
-      "Netherlands"
+      "Cristiano Ronaldo",
+      "Ryan Giggs",
+      "Ronaldinho Gaúcho",
+      "Lionel Messi"
     ]
   },
     {
     numb: 9,
-    question: "Which country hosted 2010 world cup?",
-    answer: "South Africa",
+    question: "Which club is sometimes referred to as FC Hollywood?",
+    answer: "Bayern Munich",
     options: [
-      "Ghana",
-      "South Africa",
-      "Mexico",
-      "South Korea"
+      "Real Madrid",
+      "Manchester United",
+      "Tottenham",
+      "Bayern Munich"
     ]
   },
     {
     numb: 10,
-    question: "In which World Cup did Diego Maradona score his infamous 'Hand of God' goal?",
-    answer: "Mexico 1986",
+    question: "In which year was the first European Championship held?",
+    answer: "1960",
     options: [
-      "Mexico 1986",
-      "Italy 1968",
-      "Germany 1986",
-      "Argentina 1986"
+      "1960",
+      "1961",
+      "1962",
+      "1963"
     ]
   },
 ];
