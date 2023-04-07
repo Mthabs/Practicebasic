@@ -427,6 +427,7 @@ footer{
     height: 60px;
     padding: 0 30px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     border-top: 1px solid lightgrey;
 }
@@ -453,7 +454,8 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    background: white;
+    color: #4FD1C5;
 }
 
 footer button.show{
