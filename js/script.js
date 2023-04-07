@@ -65,8 +65,8 @@ quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
 
-const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
+const next_btn = document.querySelector("header .next_btn");
+const bottom_ques_counter = document.querySelector("header .total_que");
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{

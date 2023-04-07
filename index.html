@@ -32,13 +32,13 @@
 </div>
     <!-- Info Box -->
     <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-title"><span>Quiz instructions</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">1. The complete quiz consists of 5 questions, randomly mixed in difﬁculty.</div>
+            <div class="info">2. You are limited in time by 20 minutes.</div>
+            <div class="info">3. You are not allowed to skip questions or return back to them later.</div>
             <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">5. correct answers weighs 20%.</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
@@ -48,12 +48,15 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title">Quiz questions</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">15</div>
             </div>
             <div class="time_line"></div>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
         </header>
         <section>
             <div class="que_text">
@@ -65,9 +68,7 @@
         </section>
         <!-- footer of Quiz Box -->
         <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
+
             <button class="next_btn">Next Que</button>
         </footer>
     </div>
