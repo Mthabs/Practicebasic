@@ -26,11 +26,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(300); //calling startTimer function
+    startTimer(100); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  300;
+let timeValue =  100;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +45,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 300; 
+    timeValue = 100; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -124,14 +124,14 @@ function optionSelected(answer){
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         userScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
-        answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
-     /*   console.log("Correct Answer");  */
-        console.log("Your correct answers = " + userScore);
+       /* answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
+        console.log("Correct Answer");  */
+        console.log("Your correct answers = " + userScore); 
     }else{
         answer.classList.add("incorrect"); //adding red color to correct selected option
-        answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
-       /* console.log("Wrong Answer"); */
-
+       /* answer.insertAdjacentHTML("beforeend", crossIconTag);*/ //adding cross icon to correct selected option
+        console.log("Wrong Answer =" + userScore)
+/*
         for(i=0; i < allOptions; i++){
             if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
                 option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
@@ -139,7 +139,9 @@ function optionSelected(answer){
                 console.log("Auto selected correct answer.");
             }
         }
+        */
     }
+    
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
@@ -196,11 +198,11 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 1000);
+    counterLine = setInterval(timer, 183);
     function timer(){
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time > 599){ //if time value is greater than 549
+        if(time > 549){ //if time value is greater than 549
             clearInterval(counterLine); //clear counterLine
         }
     }
