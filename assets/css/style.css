@@ -227,6 +227,8 @@ body{
 .info_box .info-list{
     height: 355px;
     padding: 60px 100px;
+    margin: 5px 0;
+    font-size: 22px;
 }
 
 .info_box .info-list .info{
