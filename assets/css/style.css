@@ -16,9 +16,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
-    width: 95%;
+    width: 90%;
     margin: 0PX auto;
+    height: 700px;
 }
 .home_page>*{
     padding: 10PX;
@@ -26,21 +26,20 @@ body{
     border-radius: 10px;
 }
 .hom_heading{
-    width: 80%;
-    height: 150px;
+    width: 55%;
+    height: 100px;
     margin: 30px;
     border: none;
     border-radius: 1000px;
-    box-shadow: 1px 1px 2px rgba(79,209,197,.64);
   }
   .logo{
-    margin-left: 40px;
-    margin-top: 30px;
-      float: left;
-      font-size: 280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      font-size: 35px;
       text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      box-shadow: 1px 1px 2px rgba(79,209,197,.64);
+
   }
   /*
   .nav_bar{
@@ -76,7 +75,7 @@ body{
   }
   */
   .hom_main{
-    width: 60%;
+    width: 36%;
     margin: 0px auto;
     height: 550px;
     display: flex;
@@ -85,7 +84,7 @@ body{
     border: 3px groove #4FD1C5;
   }
   .hom_text{
-    font-size: 20px;
+    font-size: 14px;
     text-shadow: 1px 0px 0px rgba(0,0,0,0.3), 
     0px 0px 1px #4fd1c5;
     text-align:center;
@@ -125,8 +124,8 @@ body{
 
 .home_page button{
     
-        min-width: 300px;
-        min-height: 60px;
+        min-width: 185px;
+        min-height: 55px;
         font-family: 'Nunito', sans-serif;
         font-size: 22px;
         text-transform: uppercase;
@@ -148,8 +147,8 @@ body{
       .start_quiz button::before {
       content: '';
         border-radius: 1000px;
-        min-width: calc(300px + 12px);
-        min-height: calc(60px + 12px);
+        min-width: calc(185px + 10px);
+        min-height: calc(55px + 10px);
         border: 6px solid #00FFCB;
         box-shadow: 0 0 60px rgba(0,255,203,.64);
         position: absolute;
@@ -171,7 +170,7 @@ body{
       
       .start_quiz button::after {
         content: '';
-        width: 30px; height: 30px;
+        width: 55px; height: 55px;
         border-radius: 100%;
         border: 6px solid #00FFCB;
         position: absolute;
@@ -189,14 +188,14 @@ body{
       
       @keyframes ring {
         0% {
-          width: 30px;
-          height: 30px;
+          width: 55px;
+          height: 55px;
           opacity: 1;
         }
         100% {
           position:absolute;
-          width: 300px;
-          height: 300px;
+          width: 185px;
+          height: 185px;
           opacity: 0;
         }
       }
@@ -285,7 +284,7 @@ body{
 }
 
 .quiz_page header .clock{
-    color: #004085;
+    color: black;
     background: #cce5ff;
     border: 1px solid #b8daff;
     height: 45px;
@@ -302,16 +301,16 @@ body{
     font-weight: 400;
     font-size: 17px;
     user-select: none;
+    width: 95%;
 }
 
 .quiz_page header .clock .count_down{
     font-size: 18px;
     font-weight: 500;
-    height: 30px;
-    width: 45px;
+    height: auto;
+    width: 100%;
     color: black;
-    border-radius: 5px;
-    line-height: 30px;
+    border-radius: 1000px;
     text-align: center;
     background: white;
     border: 1px solid #343a40;
