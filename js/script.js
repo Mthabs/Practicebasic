@@ -4,7 +4,7 @@ const instructions = document.querySelector(".instructions");
 const exit_btn = instructions.querySelector(".buttons .exit_quiz");
 const continue_btn = instructions.querySelector(".buttons .restart");
 const quiz_page = document.querySelector(".quiz_page");
-const result_box = document.querySelector(".result_box");
+const results_page = document.querySelector(".results_page");
 const option_list = document.querySelector(".option_list");
 /*clock*/
 const timeText = document.querySelector(".clock .show-time");
@@ -39,13 +39,13 @@ let counter;
 let counterLine;
 let widthValue = 0;
 
-const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .exit_quiz");
+const restart_quiz = results_page.querySelector(".buttons .restart");
+const quit_quiz = results_page.querySelector(".buttons .exit_quiz");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
     quiz_page.classList.add("activeQuiz"); //display quiz page
-    result_box.classList.remove("activeResult"); //hide result page
+    results_page.classList.remove("activeResult"); //hide result page
     timeValue = 99; 
     que_count = 0;
     que_numb = 1;
@@ -109,9 +109,9 @@ function showQuetions(index){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-/*
 // creating the new div tags which for icons
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+/*
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 */
 //if user clicked on option
@@ -152,8 +152,8 @@ function optionSelected(answer){
 function showResult(){
     instructions.classList.remove("activeInfo"); //hide instruction page
     quiz_page.classList.remove("activeQuiz"); //hide quiz page
-    result_box.classList.add("activeResult"); //display result box
-    const scoreText = result_box.querySelector(".score_text");
+    results_page.classList.add("activeResult"); //display result box
+    const scoreText = results_page.querySelector(".score_text");
     if (userScore > 8){ // if user scored more than 8
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>Congratulations!!!, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
