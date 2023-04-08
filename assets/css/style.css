@@ -514,21 +514,22 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
-.buttons button.restart{
+.buttons .restart{
     color: #fff;
     background: #4FD1C5;
 }
 
-.buttons button.restart:hover{
-    background: #4FD1C5;
+.buttons .restart:hover{
+    background: #fff;
+    color: #4FD1C5;
 }
 
-.buttons button.exit_quiz{
+.buttons .exit_quiz{
     color: #4FD1C5;
     background: #fff;
 }
 
-.buttons button.exit_quiz:hover{
+.buttons .exit_quiz:hover{
     color: #fff;
     background: #4FD1C5;
 }
