@@ -6,31 +6,32 @@ const continue_btn = instructions.querySelector(".buttons .restart");
 const quiz_page = document.querySelector(".quiz_page");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
+/*clock*/
+const timeText = document.querySelector(".clock .show-time");
+const timeCount = document.querySelector(".clock .count_down");
 const time_line = document.querySelector("header .time_line");
-const timeText = document.querySelector(".clock .time_left_txt");
-const timeCount = document.querySelector(".clock .timer_sec");
 
 // if startQuiz button clicked
 start_quiz.onclick = ()=>{
-    instructions.classList.add("activeInfo"); //show info box
+    instructions.classList.add("activeInfo"); //display instruction page
 }
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
-    instructions.classList.remove("activeInfo"); //hide info box
+    instructions.classList.remove("activeInfo"); //hide instruction page
 }
 
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
-    instructions.classList.remove("activeInfo"); //hide info box
-    quiz_page.classList.add("activeQuiz"); //show quiz box
+    instructions.classList.remove("activeInfo"); //hide instruction page
+    quiz_page.classList.add("activeQuiz"); //display quiz page
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(100); //calling startTimer function
+    startTimer(99); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  100;
+let timeValue =  99;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -43,9 +44,9 @@ const quit_quiz = result_box.querySelector(".buttons .exit_quiz");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
-    quiz_page.classList.add("activeQuiz"); //show quiz page
+    quiz_page.classList.add("activeQuiz"); //display quiz page
     result_box.classList.remove("activeResult"); //hide result page
-    timeValue = 100; 
+    timeValue = 99; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -145,13 +146,13 @@ function optionSelected(answer){
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
-    next_btn.classList.add("show"); //show the next button if user selected any option
+    next_btn.classList.add("show"); //display the next button if user selected any option
 }
 
 function showResult(){
-    instructions.classList.remove("activeInfo"); //hide info box
-    quiz_page.classList.remove("activeQuiz"); //hide quiz box
-    result_box.classList.add("activeResult"); //show result box
+    instructions.classList.remove("activeInfo"); //hide instruction page
+    quiz_page.classList.remove("activeQuiz"); //hide quiz page
+    result_box.classList.add("activeResult"); //display result box
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 8){ // if user scored more than 8
         //creating a new span tag and passing the user score number and total question number

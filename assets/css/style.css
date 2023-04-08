@@ -296,13 +296,13 @@ body{
     margin-left: 30px;
 }
 
-.quiz_page header .clock .time_left_txt{
+.quiz_page header .clock .show-time{
     font-weight: 400;
     font-size: 17px;
     user-select: none;
 }
 
-.quiz_page header .clock .timer_sec{
+.quiz_page header .clock .count_down{
     font-size: 18px;
     font-weight: 500;
     height: 30px;
@@ -372,7 +372,7 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #fe;
+    color: #fefff;
     background: #cce5ff;
     border: 1px solid #b8daff;
 }
