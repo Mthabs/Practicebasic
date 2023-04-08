@@ -3,12 +3,12 @@ const start_quiz = document.querySelector(".home_page button");
 const instructions = document.querySelector(".instructions");
 const exit_btn = instructions.querySelector(".buttons .exit_quiz");
 const continue_btn = instructions.querySelector(".buttons .restart");
-const quiz_box = document.querySelector(".quiz_box");
+const quiz_page = document.querySelector(".quiz_page");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
-const timeText = document.querySelector(".timer .time_left_txt");
-const timeCount = document.querySelector(".timer .timer_sec");
+const timeText = document.querySelector(".clock .time_left_txt");
+const timeCount = document.querySelector(".clock .timer_sec");
 
 // if startQuiz button clicked
 start_quiz.onclick = ()=>{
@@ -23,7 +23,7 @@ exit_btn.onclick = ()=>{
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
     instructions.classList.remove("activeInfo"); //hide info box
-    quiz_box.classList.add("activeQuiz"); //show quiz box
+    quiz_page.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(100); //calling startTimer function
@@ -43,8 +43,8 @@ const quit_quiz = result_box.querySelector(".buttons .exit_quiz");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    result_box.classList.remove("activeResult"); //hide result box
+    quiz_page.classList.add("activeQuiz"); //show quiz page
+    result_box.classList.remove("activeResult"); //hide result page
     timeValue = 100; 
     que_count = 0;
     que_numb = 1;
@@ -150,7 +150,7 @@ function optionSelected(answer){
 
 function showResult(){
     instructions.classList.remove("activeInfo"); //hide info box
-    quiz_box.classList.remove("activeQuiz"); //hide quiz box
+    quiz_page.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 8){ // if user scored more than 8
