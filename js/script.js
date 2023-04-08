@@ -1,7 +1,7 @@
 //selecting all required elements
 const start_quiz = document.querySelector(".home_page button");
 const instructions = document.querySelector(".instructions");
-const exit_btn = instructions.querySelector(".buttons .quit");
+const exit_btn = instructions.querySelector(".buttons .exit_quiz");
 const continue_btn = instructions.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
@@ -39,7 +39,7 @@ let counterLine;
 let widthValue = 0;
 
 const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+const quit_quiz = result_box.querySelector(".buttons .exit_quiz");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{

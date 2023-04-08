@@ -198,7 +198,6 @@ body{
           opacity: 0;
         }
       }
-    
 
 .instructions{
     width: 900px;
@@ -211,7 +210,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.instructions .info-title{
+.instructions .instr_head{
     height: 120px;
     width: 100%;
     border-bottom: 1px solid #00FFCB;;
@@ -224,7 +223,7 @@ body{
     font-weight: 600;
 }
 
-.instructions .info-list{
+.instructions .instr_body{
     height: 355px;
     padding: 60px 100px;
     margin: 5px 0;
@@ -524,12 +523,12 @@ footer button.show{
     background: #4FD1C5;
 }
 
-.buttons button.quit{
+.buttons button.exit_quiz{
     color: #4FD1C5;
     background: #fff;
 }
 
-.buttons button.quit:hover{
+.buttons button.exit_quiz:hover{
     color: #fff;
     background: #4FD1C5;
 }
