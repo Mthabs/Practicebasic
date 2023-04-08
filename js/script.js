@@ -67,7 +67,7 @@ quit_quiz.onclick = ()=>{
 }
 
 const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("header .total_que");
+const bottom_ques_counter = document.querySelector("header .sum_qstn");
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{

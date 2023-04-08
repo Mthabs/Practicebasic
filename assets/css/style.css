@@ -324,17 +324,17 @@ body{
     height: 20px;
     background: #4FD1C5;
 }
-.quiz_page header .total_que span{
+.quiz_page header .sum_qstn span{
     display: flex;
     user-select: none;
 }
 
-.quiz_page header .total_que span p{
+.quiz_page header .sum_qstn span p{
     font-weight: 500;
     padding: 0 5px;
 }
 
-.quiz_page header .total_que span p:first-child{
+.quiz_page header .sum_qstn span p:first-child{
     padding-left: 0px;
 }
 
@@ -372,7 +372,7 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #fefff;
+    color: #feffff;
     background: #cce5ff;
     border: 1px solid #b8daff;
 }
