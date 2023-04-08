@@ -92,7 +92,7 @@ body{
   }
   
 
-.info_box,
+.instructions,
 .quiz_box,
 .result_box{
     position: absolute;
@@ -103,7 +103,7 @@ body{
     0px 50px 600px 600px #F3FFFF;
 }
 
-.info_box.activeInfo,
+.instructions.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
@@ -200,7 +200,7 @@ body{
       }
     
 
-.info_box{
+.instructions{
     width: 900px;
     height: 600px;
     background: #fff;
@@ -211,7 +211,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.info_box .info-title{
+.instructions .info-title{
     height: 120px;
     width: 100%;
     border-bottom: 1px solid #00FFCB;;
@@ -224,14 +224,14 @@ body{
     font-weight: 600;
 }
 
-.info_box .info-list{
+.instructions .info-list{
     height: 355px;
     padding: 60px 100px;
     margin: 5px 0;
     font-size: 22px;
 }
 
-.info_box .buttons{
+.instructions .buttons{
     height: 120px;
     display: flex;
     align-items: center;
@@ -240,7 +240,7 @@ body{
     border-top: 1px solid lightgrey;
 }
 
-.info_box .buttons button{
+.instructions .buttons button{
     margin: 0 5px;
     height: 40px;
     width: 100px;
