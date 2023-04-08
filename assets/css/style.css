@@ -299,7 +299,7 @@ body{
 
 .quiz_page header .clock .show-time{
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
     user-select: none;
     width: 95%;
 }
@@ -322,12 +322,13 @@ body{
     bottom: 0px;
     margin-left: 120px;
     width: 80%;
-    height: 20px;
+    height: 30px;
     background: #4FD1C5;
 }
 .quiz_page header .sum_qstn span{
     display: flex;
     user-select: none;
+    font-size: 20px;
 }
 
 .quiz_page header .sum_qstn span p{
