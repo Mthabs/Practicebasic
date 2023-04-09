@@ -625,6 +625,9 @@ footer button.show{
     @media (max-width:500px) {
         .home_page{
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .logo{
@@ -636,5 +639,46 @@ footer button.show{
         .hom_text{
             font-size: 10px;
         }
+        .instructions{
+            width: 98%;
+            height: 620px;
+        }
         
+        .instructions .instr_body{
+            height: 355px;
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 21px;
+        }
+        .quiz_page{
+            width: 98%;
+            height: 620px;
+        }
+
+        .quiz_page section{
+            height: 355px;
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 21px;
+        }
+        .results_page{
+            width: 98%;
+        }
+        .results_page .score_text span{
+            font-size: 15px;
+        }
+        .quiz_page header .quiz_head{
+           font-size: 18px;
+           text-align: center;
+        }
+        .quiz_page header .sum_qstn span{
+            font-size: 18px;
+        }
+        .quiz_page header .clock .show-time{
+            font-size: 18px;
+        }
+        .quiz_page header .time_line{
+            display: none;
+        }
+
     }
