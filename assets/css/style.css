@@ -526,6 +526,19 @@ footer button.show{
             height: 40%;
             width: 38%;
         }
+        .instructions{
+            width: 700px;
+            height: 600px;
+            font-size: 21;
+        }
+        .quiz_page{
+            width: 700px;
+            height: 600px;
+            font-size: 21;  
+        }
+        .quiz_page header{
+            height: 180px;
+        }
 
         .home_page button{
             font-size: 17px;
@@ -552,6 +565,53 @@ footer button.show{
               position:absolute;
               width: 115px;
               height: 115px;
+              opacity: 0.5;
+            }
+        }
+    }
+    @media (min-width:500px) {
+        .logo{
+            font-size: 17px;
+        }
+        .hom_main{
+            width: 65%;
+            height: 500px;
+            margin: 0px;
+        }
+        .hom_text{
+            font-size: 10px;
+            height: 350px;
+        }
+        .wrap{
+            height: 40%;
+        }
+        .home_page button{
+            font-size: 12px;
+            letter-spacing: 1p;
+            min-width: 90px;
+            min-height: 15px;
+            overflow: hidden;
+            clear: both;
+        }
+        .start_quiz button::before{
+            min-width: calc(90px + 4px);
+            min-height: calc(15px + 4px);
+        }
+        .start_quiz button:hover::after, .start_quiz button:focus::after {
+            animation: none;
+            display: none;
+          }
+          
+          @keyframes ring {
+            0% {
+              width: 25px;
+              height: 25px;
+              opacity: 1;
+            }
+            100% {
+              position:absolute;
+              width: 90px;
+              height: 90px;
               opacity: 0.5;
             }
         }
