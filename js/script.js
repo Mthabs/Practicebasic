@@ -1,15 +1,18 @@
 //selecting all required elements
 const start_quiz = document.querySelector(".home_page button");
 const instructions = document.querySelector(".instructions");
+/*buttons*/
 const exit_btn = instructions.querySelector(".buttons .exit_quiz");
 const continue_btn = instructions.querySelector(".buttons .restart");
+/*Quiz*/
 const quiz_page = document.querySelector(".quiz_page");
-const results_page = document.querySelector(".results_page");
-const option_list = document.querySelector(".option_list");
-/*clock*/
 const timeText = document.querySelector(".clock .show-time");
 const timeCount = document.querySelector(".clock .count_down");
 const time_line = document.querySelector("header .time_line");
+const option_list = document.querySelector(".option_list");
+/*result*/ 
+const results_page = document.querySelector(".results_page");
+
 
 // if startQuiz button clicked
 start_quiz.onclick = ()=>{
@@ -53,8 +56,6 @@ restart_quiz.onclick = ()=>{
     widthValue = 0;
     showQuetions(que_count); //calling showQestions function
     queCounter(que_numb); //passing que_numb value to queCounter
- /*   clearInterval(counter); //clear counter
-    clearInterval(counterLine); */ //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
@@ -76,10 +77,6 @@ next_button.onclick = ()=>{
         que_numb++; //increment the que_numb value
         showQuetions(que_count); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
-    /*  clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        startTimer(timeValue); //calling startTimer function
-        startTimerLine(widthValue);*/ //calling startTimerLine function
         timeText.textContent = "Time Left"; //change the timeText to Time Left
         next_button.classList.remove("show"); //hide the next button
     }else{
@@ -109,38 +106,21 @@ function showQuetions(index){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-// creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-/*
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
-*/
+
 //if user clicked on option
 function optionSelected(answer){
- /* clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
- */ let userAns = answer.textContent; //getting user selected option
+
+    let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         userScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
-       /* answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
-        console.log("Correct Answer");  */
         console.log("Your correct answers = " + userScore); 
     }else{
         answer.classList.add("incorrect"); //adding red color to correct selected option
-       /* answer.insertAdjacentHTML("beforeend", crossIconTag);*/ //adding cross icon to correct selected option
         console.log("Wrong Answer =" + userScore)
-/*
-        for(i=0; i < allOptions; i++){
-            if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
-                option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
-                option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
-                console.log("Auto selected correct answer.");
-            }
-        }
-        */
     }
     
     for(i=0; i < allOptions; i++){
@@ -189,16 +169,14 @@ function startTimer(time){
             for(i=0; i < allOptions; i++){
                 if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
                     option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
-                   /* 
-                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option */
-                    console.log("Time Off" /*: Auto selected correct answer."*/); 
+                    console.log("Time Off"); 
                 }
             }
         
             for(i=0; i < allOptions; i++){
                 option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
             }
-            /*next_button.classList.add("show"); //show the next button if user selected any option */
+           
             showResult();
         }
     }
@@ -209,7 +187,7 @@ function startTimerLine(time){
     function timer(){
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time > 549){ //if time value is greater than 549
+        if(time > 699){ //if time value is greater than 699
             clearInterval(counterLine); //clear counterLine
         }
     }

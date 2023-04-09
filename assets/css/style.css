@@ -15,10 +15,12 @@ body{
 .home_page{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 65%;
     margin: 0PX auto;
     height: 700px;
+border: 3px solid red;
 }
 .home_page>*{
     padding: 10PX;
@@ -26,11 +28,9 @@ body{
     border-radius: 10px;
 }
 .hom_heading{
-    width: 55%;
+    width: 95%;
     height: 100px;
     margin: 30px;
-    border: none;
-    border-radius: 1000px;
   }
   .logo{
     display: flex;
@@ -41,41 +41,8 @@ body{
       0px -4px 10px rgba(255,255,255,0.3);
 
   }
-  /*
-  .nav_bar{
-      font-family: Lato, sans-serif;
-      font-size: 110%;
-      float: right;
-      list-style-type: none;
-      margin-right: 40px;
-      margin-top: 40px;
-      text-decoration: none;
-      min-width: 300px;
-      min-height: 60px;
-      font-family: 'Nunito', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 1.3px;
-      font-weight: 700;
-      color: #313133;
-      background: #4FD1C5;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-      border: none;
-      border-radius: 1000px;
-      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-      transition: all 0.3s ease-in-out 0s;
-      cursor: pointer;
-      outline: none;
-      position: relative;
-      padding: 10px;
-  }
-  .nav_bar:hover, .nav_bar:focus {
-    color: #313133;
-    transform: translateY(-6px);
-    
-  }
-  */
   .hom_main{
-    width: 36%;
+    width: 50%;
     margin: 0px auto;
     height: 550px;
     display: flex;
@@ -534,4 +501,11 @@ footer button.show{
 .buttons .exit_quiz:hover{
     color: #fff;
     background: #4FD1C5;
+}
+@media (max-width:1200px) {
+    .wrap{
+        height: 40%;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
 }
