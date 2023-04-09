@@ -503,6 +503,7 @@ footer button.show{
     background: #4FD1C5;
 }
 @media(min-width:1200px) {
+    
     .wrap{
         height: 40%;
         padding-top: 10px;
@@ -510,7 +511,9 @@ footer button.show{
     }
 }
     @media(min-width:800px){
+       
         .home_page{
+            width: 95%;
             height: 620px;
         }
         .logo{
@@ -570,8 +573,11 @@ footer button.show{
         }
     }
     @media (min-width:500px) {
+        .home_page{
+            width: 95%;
+        }
         .logo{
-            font-size: 17px;
+            font-size: 25px;
         }
         .hom_main{
             width: 65%;
@@ -615,4 +621,20 @@ footer button.show{
               opacity: 0.5;
             }
         }
+    }
+    @media (max-width:500px) {
+        .home_page{
+            width: 100%;
+        }
+
+        .logo{
+            font-size: 14px;
+        }
+        .hom_main{
+            width: 95%;
+        }
+        .hom_text{
+            font-size: 10px;
+        }
+        
     }
