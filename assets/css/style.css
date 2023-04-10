@@ -502,7 +502,7 @@ footer button.show{
     color: #fff;
     background: #4FD1C5;
 }
-@media(min-width:1200px) {
+@media(min-width:1025px) {
     
     .wrap{
         height: 40%;
@@ -510,7 +510,7 @@ footer button.show{
         margin-top: 10px;
     }
 }
-    @media(min-width:800px){
+    @media(min-width:769px) and (max-width:1024px){
        
         .home_page{
             width: 95%;
@@ -530,14 +530,18 @@ footer button.show{
             width: 38%;
         }
         .instructions{
-            width: 700px;
-            height: 600px;
+            width: 95%;
+            height: 95%;
             font-size: 21;
         }
         .quiz_page{
-            width: 700px;
-            height: 600px;
+            width: 95%;
+            height: 95%;
             font-size: 21;  
+        }
+        .results_page{
+            width: 50%;
+            height: 50%; 
         }
         .quiz_page header{
             height: 180px;
@@ -577,7 +581,7 @@ footer button.show{
     }
 
     
-    @media (min-width:500px) {
+    @media (min-width:481px) and (max-width:769px) {
         .home_page{
             width: 95%;
         }
@@ -586,8 +590,7 @@ footer button.show{
         }
         .hom_main{
             width: 65%;
-            height: 500px;
-            margin: 0px;
+            height: 40%;
         }
         .hom_text{
             font-size: 10px;
@@ -627,8 +630,8 @@ footer button.show{
             }
         }
         .instructions{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
         
         .instructions .instr_body{
@@ -638,8 +641,8 @@ footer button.show{
             font-size: 21px;
         }
         .quiz_page{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
 
         .quiz_page section{
@@ -649,7 +652,8 @@ footer button.show{
             font-size: 21px;
         }
         .results_page{
-            width: 98%;
+            width: 70%;
+            height: 50%;
         }
         .results_page .score_text span{
             font-size: 15px;
@@ -668,12 +672,13 @@ footer button.show{
             margin-left: 20px;
         }
     }
-    @media (max-width:500px) {
+    @media (min-width:320px) and (max-width:480px) {
         .home_page{
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 620px;
         }
 
         .logo{
@@ -722,6 +727,72 @@ footer button.show{
         }
         .quiz_page header .clock .show-time{
             font-size: 18px;
+        }
+        .quiz_page header .time_line{
+            display: none;
+        }
+
+    }
+    @media (max-width:320px) {
+        .home_page{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 620px;
+        }
+
+        .logo{
+            font-size: 14px;
+        }
+        .hom_main{
+            width: 95%;
+        }
+        .hom_text{
+            font-size: 10px;
+        }
+        .instructions{
+            width: 98%;
+            height: 620px;
+        }
+        
+        .instructions .instr_body{
+            height: 355px;
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 18px;
+        }
+        .quiz_page{
+            width: 98%;
+            height: 620px;
+        }
+
+        .quiz_page section{
+            height: 355px;
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 21px;
+        }
+        .results_page{
+            width: 98%;
+            height: 95%;
+        }
+        .results_page .score_text span{
+            font-size: 15px;
+        }
+        .quiz_page header .quiz_head{
+           font-size: 10px;
+           text-align: center;
+        }
+        .quiz_page header .sum_qstn span{
+            font-size: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+       
+        .quiz_page header .clock .show-time{
+            font-size: 10px;
+            width: 30px;
         }
         .quiz_page header .time_line{
             display: none;
