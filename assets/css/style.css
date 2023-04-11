@@ -659,14 +659,17 @@ footer button.show{
             font-size: 15px;
         }
         .quiz_page header .quiz_head{
-           font-size: 18px;
+           font-size: 10px;
            text-align: center;
         }
         .quiz_page header .sum_qstn span{
-            font-size: 18px;
+            font-size: 10px;
+            text-align: center;
+            display: inline-block;
         }
         .quiz_page header .clock .show-time{
-            font-size: 18px;
+            font-size: 10px;
+            
         }
         .quiz_page header .time_line{
             margin-left: 20px;
@@ -719,14 +722,16 @@ footer button.show{
             font-size: 15px;
         }
         .quiz_page header .quiz_head{
-           font-size: 18px;
+           font-size: 10px;
            text-align: center;
         }
         .quiz_page header .sum_qstn span{
-            font-size: 18px;
+            font-size: 10px;
+            text-align: center;
+            display: inline-block;
         }
         .quiz_page header .clock .show-time{
-            font-size: 18px;
+            font-size: 10px;
         }
         .quiz_page header .time_line{
             display: none;
