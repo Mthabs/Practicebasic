@@ -547,7 +547,7 @@ footer button.show{
             height: 180px;
         }
         .quiz_page header .time_line{
-            margin-left: 53px;
+            margin-left: 20px;
         }
 
         .home_page button{
@@ -669,7 +669,7 @@ footer button.show{
         }
         .quiz_page header .clock .show-time{
             font-size: 10px;
-            
+
         }
         .quiz_page header .time_line{
             margin-left: 20px;
@@ -694,8 +694,8 @@ footer button.show{
             font-size: 10px;
         }
         .instructions{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
         
         .instructions .instr_body{
@@ -705,8 +705,8 @@ footer button.show{
             font-size: 21px;
         }
         .quiz_page{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
 
         .quiz_page section{
@@ -757,8 +757,8 @@ footer button.show{
             font-size: 10px;
         }
         .instructions{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
         
         .instructions .instr_body{
@@ -768,8 +768,8 @@ footer button.show{
             font-size: 18px;
         }
         .quiz_page{
-            width: 98%;
-            height: 620px;
+            width: 95%;
+            height: 95%;
         }
 
         .quiz_page section{

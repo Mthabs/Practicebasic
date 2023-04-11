@@ -1,3 +1,4 @@
+
 //selecting all required elements
 const start_quiz = document.querySelector(".home_page button");
 const instructions = document.querySelector(".instructions");
@@ -33,7 +34,7 @@ continue_btn.onclick = ()=>{
     startTimer(99); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
-
+/*
 let timeValue =  99;
 let que_count = 0;
 let que_numb = 1;
