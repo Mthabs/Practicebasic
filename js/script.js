@@ -183,13 +183,13 @@ function startTimer(time){
 function startTimerLine(time){
     counterLine = setInterval(timer, 183);
     function timer(){
-        time += 1; //upgrading time value with 1
-        time_line.style.width = time + "px"; //increasing width of time_line with px by time value
+        time += 1; //incrementing time with 1
+        timeline.style.length = time + "px"; //increasing length of time_line with px by time value
     }
 }
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
-    bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
+    let No_ofquestios = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    bottom_ques_counter.innerHTML = No_ofquestios;  //adding new span tag inside bottom_ques_counter
 }
